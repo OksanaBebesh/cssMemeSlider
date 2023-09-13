@@ -1,0 +1,67 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.monitor {
+  background-color: #000;
+  height: 60%;
+  padding: 19px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-place {
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  border-radius: 11px;
+  width: 70%;
+  height: 70vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 93%;
+}
+
+.pagination-line {
+  display: flex;
+  justify-content: space-between;
+  width: 12%;
+}
+
+/* .pagination {
+  color: blue;
+  font-size: 20px;
+} */
+
+button:hover {
+  background-color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+button:focus {
+  border-color: red;
+  background-color: #fff;
+  border: 1px;
+}
+
+button {
+  background-color: blue;
+  width: 10px;
+  height: 10px;
+  border-color: blue;
+  border-radius: 100px;
+  padding: 0;
+  border: 1px;
+}
+
+.motivation-text {
+  color: #fff;
+}
