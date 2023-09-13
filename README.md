@@ -1,1 +1,1 @@
-https://OksanaBebesh.github.io/cssMemeSlider/cssMemeSlider/index.html
+https://oksanabebesh.github.io/cssMemeSlider/cssMemeSlider/index.html
