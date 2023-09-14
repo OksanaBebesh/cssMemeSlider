@@ -32,36 +32,57 @@
 .pagination-line {
   display: flex;
   justify-content: space-between;
-  width: 12%;
+  width: 100vw;
 }
 
-/* .pagination {
+.pagination {
   color: blue;
-  font-size: 20px;
-} */
-
-button:hover {
-  background-color: #fff;
-  border-color: #fff;
-  cursor: pointer;
-}
-
-button:focus {
-  border-color: red;
-  background-color: #fff;
-  border: 1px;
-}
-
-button {
-  background-color: blue;
+  border-radius: 100px;
   width: 10px;
   height: 10px;
-  border-color: blue;
-  border-radius: 100px;
-  padding: 0;
-  border: 1px;
+  border: 1px solid;
+  background-color: blue;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+#point-1:checked ~ label[for="point-1"],
+#point-2:checked ~ label[for="point-2"],
+#point-3:checked ~ label[for="point-3"],
+#point-4:checked ~ label[for="point-4"] {
+  background-color: #000;
+}
+
+#point-2:checked ~ label[for="radio-image"] {
+  background-image: url("../images/2.jpg");
+}
+
+#point-2:checked ~ label[for="text"] {
+  content: "You are braver than you believe, stronger than you seem and smarter than you think";
+}
+
+#point-3:checked ~ label[for="radio-image"] {
+  background-image: url("../images/3.png");
+}
+
+#point-4:checked ~ label[for="radio-image"] {
+  background-image: url("../images/4.png");
 }
 
 .motivation-text {
   color: #fff;
 }
+
+input[type="radio"] {
+  display: none;
+}
+
+label:hover:not(.motivation-text, .image-place) {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+/* You are braver than you believe, stronger than you seem and smarter than you think
+The future belongs to those who believe in the beauty of their dreams
+The best way to predict your future is to create it
+*/

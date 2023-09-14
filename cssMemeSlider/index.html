@@ -12,14 +12,29 @@
     <div class="container">
       <h1 class="hidden">CSS Meme Slider</h1>
       <div class="monitor">
-        <div class="image-place"></div>
         <div class="row">
-          <div class="motivation-text"><p>I am the Best Of the Best!</p></div>
+          <!-- <div class="motivation-text"><p>I am the Best Of the Best!</p></div> -->
           <div class="pagination-line">
-            <button class="pagination point-1"></button>
-            <button class="pagination point-2"></button>
-            <button class="pagination point-3"></button>
-            <button class="pagination point-4"></button>
+            <input
+              name="radio-image"
+              id="point-1"
+              type="radio"
+              checked="checked"
+            />
+            <input name="radio-image" id="point-2" type="radio" />
+            <input name="radio-image" id="point-3" type="radio" />
+            <input name="radio-image" id="point-4" type="radio" />
+            <input name="radio-image" id="radio-image" type="radio" />
+            <input name="radio-image" id="text" type="radio" />
+
+            <label for="point-1" class="pagination"></label>
+            <label for="point-2" class="pagination"></label>
+            <label for="point-3" class="pagination"></label>
+            <label for="point-4" class="pagination"></label>
+            <label for="radio-image" class="image-place"></label>
+            <label for="text" class="motivation-text"
+              >I am the Best Of the Best!</label
+            >
           </div>
         </div>
       </div>
