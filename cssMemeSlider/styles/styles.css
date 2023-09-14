@@ -46,6 +46,22 @@
   transition: all 0.15s ease;
 }
 
+#point-1:checked ~ label[for="text-point-1"]::after {
+  content: "I am the Best Of the Best!";
+}
+
+#point-2:checked ~ label[for="text-point-2"]::after {
+  content: "You are braver than you believe!";
+}
+
+#point-3:checked ~ label[for="text-point-3"]::after {
+  content: "Learn from yesterday!";
+}
+
+#point-4:checked ~ label[for="text-point-4"]::after {
+  content: "If things go wrong, don’t go with them!";
+}
+
 #point-1:checked ~ label[for="point-1"],
 #point-2:checked ~ label[for="point-2"],
 #point-3:checked ~ label[for="point-3"],
@@ -55,10 +71,6 @@
 
 #point-2:checked ~ label[for="radio-image"] {
   background-image: url("../images/2.jpg");
-}
-
-#point-2:checked ~ label[for="text"] {
-  content: "You are braver than you believe, stronger than you seem and smarter than you think";
 }
 
 #point-3:checked ~ label[for="radio-image"] {
@@ -81,8 +93,3 @@ label:hover:not(.motivation-text, .image-place) {
   border: 1px solid #fff;
   background-color: #fff;
 }
-
-/* You are braver than you believe, stronger than you seem and smarter than you think
-The future belongs to those who believe in the beauty of their dreams
-The best way to predict your future is to create it
-*/
